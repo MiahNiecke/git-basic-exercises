@@ -1,0 +1,351 @@
+    1  git
+    2  mkdir git-basic-exercises
+    3  cd git-basic-exercises
+    4  pwd
+    5  ls -a
+    6  git init
+    7  ls -a
+    8  git status
+    9  touch README.md
+   10  ls -a
+   11  git status
+   12  git log
+   13  git add README.md
+   14  git status
+   15  git rm --cached README.md
+   16  git status
+   17  git add README.md
+   18  git status
+   19  git commit -m "initial commit"
+   20  git config --global mn.dreeckmeier@hotmail.com
+   21  git commit -m "initial commit"
+   22  git config --global user.email "mn.dreeckmeier@hotmail.com"
+   23  git commit -m "initial commit"
+   24  git config --global user.email mn.dreeckmeier@hotmail.com
+   25  git config --global user.name Miah Niecke Dreeckmeier
+   26  git commit -m "initial commit"
+   27  git config --list --show-origin
+   28  git config --global username "Miah Niecke Dreeckmeier"
+   29  git config --global user.name "Miah Niecke Dreeckmeier"
+   30  git config --list --show-origin
+   31  git commit -m "initial commit"
+   32  git log
+   33  q
+   34  nano README.md
+   35  cat README.md
+   36  git status
+   37  git add README.md
+   38  git status
+   39  git commit -m "second commit"
+   40  git status
+   41  nano README.md
+   42  cat README.md
+   43  git status
+   44  git add README.md\
+   45  git status
+   46  git commit -m "third commit"
+   47  git status
+   48  git log
+   49  q
+   50  git checkout da31bf621f44196c859311b11d499437f12b3a26
+   51  cat README.md
+   52  git checkout main
+   53  git checkout master
+   54  cat README.md
+   55  git branch
+   56  git branch milkshake-flavours
+   57  git branch
+   58  git checkout milkshake-flavours
+   59  git branch
+   60  pwd
+   61  nano milkshakes.md
+   62  cat milkshakes.md
+   63  git status
+   64  git add milkshakes.md
+   65  git status
+   66  git commit -m "added initial flavours"
+   67  git log
+   68  git checkout master
+   69  git log
+   70  da31bf621f44196c859311b11d499437f12b3a26gq
+   71  git branch history
+   72  git branch
+   73  git checkout history 
+   74  git log
+   75  git branch
+   76  history > history.txt
+   77  git status
+   78  git add history.txt
+   79  git status
+   80  git commit -m "added history"
+   81  git log
+   82  git checkout milkshake-flavours
+   83  git branch
+   84  git log
+   85  cat README.md
+   86  milkshakes.md
+   87  checkout milkshakes-flavours
+   88  git checkout milkshake-flavours 
+   89  nano milkshakes.md
+   90  git status
+   91  git restore milkshakes.md
+   92  git status
+   93  git checkout master 
+   94  nano README.md
+   95  git add README.md
+   96  git status
+   97  git commit -m "random readme changes"
+   98  git status
+   99  git checkout history 
+  100  cat README.md 
+  101  rm README.md 
+  102  echo "booya" > README.md
+  103  git status
+  104  git add README.md 
+  105  git status
+  106  git commit -m "rewrote readme"
+  107  git checkout master
+  108  git log
+  109  ls
+  110  git log
+  111  git status
+  112  ls
+  113  git checkout milkshake-flavours 
+  114  ls
+  115  git log
+  116  git checkout history
+  117  ls
+  118  git log
+  119  git checkout master
+  120  git reset --hard HEAD
+  121  git log
+  122  git commit --amend
+  123  git status
+  124  git log
+  125  git restore
+  126  git restore README.md
+  127  git status
+  128  git log
+  129  git reset --hard HEAD 
+  130  git reset --hard README.md
+  131  git checkout milkshake-flavours 
+  132  git log
+  133  nano README.md 
+  134  git status
+  135  git add README.md 
+  136  git status
+  137  git commit -m "random readme changes"
+  138  git checkout history 
+  139  cat README.md 
+  140  rm README.md 
+  141  echo "booya" > READ.me
+  142  rm READ.me
+  143  echo "booya" > READ.md
+  144  git status
+  145  git READ.md
+  146  git rm READ.md
+  147  cat READ.md
+  148  rm READ.md
+  149  git status
+  150  git restore README.md
+  151  git status
+  152  git log
+  153  git checkout milkshake-flavours 
+  154  git log
+  155  git checkout master 
+  156  git log 
+  157  git checkout history 
+  158  git log
+  159  git merge milkshake-flavours 
+  160  nano README.md 
+  161  git status
+  162  git add README.md 
+  163  git status
+  164  git commit -m "merging master and milkshake branches"
+  165  git ls
+  166  git ls -a
+  167  git log
+  168  git ls -a
+  169  git ls
+  170  git ls -a
+  171  git checkout master 
+  172  git log
+  173  git checkout history 
+  174  git checkout milkshake-flavours 
+  175  git log
+  176  git checkout master 
+  177  git merge history 
+  178  nano README.md 
+  179  git status
+  180  git add README.md 
+  181  git status
+  182  git commit -m "Added history to master branch
+  183  git status
+  184  "
+  185  git status
+  186  git log
+  187  git checkout history 
+  188  git log
+  189  git remote add origin https://github.com/MiahNiecke/git-basic-exercises.git
+  190  git branch -M main
+  191  git push -u origin main
+  192  git remote add origin https://github.com/MiahNiecke/git-basic-exercises.git
+  193  git branch -M main
+  194  git push -u origin main
+  195  git remote add origin https://github.com/MiahNiecke/git-basic-exercises.git
+  196  git branch -M main
+  197  git push -u origin main
+  198  git remote add origin https://github.com/MiahNiecke/git-basic-exercises.git
+  199  git branch -M main
+  200  git push -u origin main
+  201  git remote add origin https://github.com/MiahNiecke/git-basic-exercises.git
+  202  git branch -M main
+  203  git push -u origin main
+  204  git remote add origin https://github.com/MiahNiecke/git-basic-exercises.git
+  205  git branch -M main
+  206  git push -u origin main
+  207  git remote add origin https://github.com/MiahNiecke/git-basic-exercises.git
+  208  git branch -M main
+  209  git push -u origin main
+  210  git remote add origin https://github.com/MiahNiecke/git-basic-exercises.git
+  211  git branch -M main
+  212  git push -u origin main
+  213  git checkout master
+  214  Miah Niecke Dreeckmeier
+  215  git config --global user.name "Miah Niecke Dreeckmeier"
+  216  git config --global user.email mn.dreeckmeier@hotmail.com
+  217  git checkout master
+  218  git-basic-exercises
+  219  cd git-basic-exercises/
+  220  git checkout master
+  221  git log
+  222  git remote add origin https://github.com/MiahNiecke/git-basic-exercises.git
+  223  git branch -M main
+  224  git push -u origin main
+  225  git remote add origin https://github.com/MiahNiecke/git-basic-exercises.git
+  226  git branch -M main
+  227* git remote add origin https://github.com/MiahNiecke/git-basic-exercises.git
+git branch -M main
+git push -u origin main
+  228  git remote add origin https://github.com/MiahNiecke/git-basic-exercises.git
+  229  git branch -M master
+  230  git remote add origin https://github.com/MiahNiecke/git-basic-exercises.git
+  231  git branch -M master
+  232  git push -u origin main
+  233  git remote add origin https://github.com/MiahNiecke/git-basic-exercises.git
+  234  git push origin master
+  235  https://github.com/MiahNiecke/git-basic-exercises.git
+  236  git push origin main
+  237  git push origin master
+  238  git push origin master 
+  239  git remote add origin https://github.com/MiahNiecke/git-basic-exercises.git
+  240  git branch -M main
+  241  git push -u origin main
+  242  git push origin master
+  243  git origin
+  244  git branch -M master
+  245  git push -u origin main
+  246  git branch -M main
+  247  git push -u origin master
+  248  git branch -M main 
+  249  git push -u origin main 
+  250  git branch -M main 
+  251  git push -u origin main 
+  252  git branch -M main 
+  253  git push -u origin main 
+  254  git branch -M main
+  255  git push -u origin main
+  256  https://github.com/MiahNiecke/git-basic-exercises.git
+  257  git https://github.com/MiahNiecke/git-basic-exercises.git
+  258  git push origin main
+  259  git branch -m master main
+  260  git checkout main
+  261  git checkout master
+  262  git log
+  263  git master
+  264  git checkout master
+  265  git checkout milkshake-flavours 
+  266  git log
+  267  git remote add origin https://github.com/MiahNiecke/git-basic-exercises.git
+  268  git branch -M main
+  269  git push -u origin main
+  270  git remote -v
+  271  git remote rm origin
+  272  git remote -v
+  273  git remote add origin https://github.com/MiahNiecke/git-basic-exercises.git
+  274  git branch -M main
+  275  git push -u origin main
+  276  git remote -v
+  277  git remote rm origin
+  278  git remote -v
+  279  git remote add origin https://github.com/MiahNiecke/git-basic-exercises.git
+  280  git branch -M main
+  281  git push -u origin main
+  282  git remote rm origin
+  283  git remote add origin https://github.com/MiahNiecke/git-basic-exercises.git
+  284  git branch -M main
+  285  git push -u origin main
+  286  git remote
+  287  git remote -v
+  288  git remote rm origin
+  289  git remote -v
+  290  git remote set-url origin
+  291  git remote add origin https://github.com/MiahNiecke/git-basic-exercises.git
+  292  git branch -M main
+  293  git push -u origin main
+  294  cd ..
+  295  pwd
+  296  cd git-basic-exercises/
+  297  cd
+  298  mkdir git-basic-exercise
+  299  cd
+  300  cd git-basic-exercise
+  301  git log
+  302  git status
+  303  ls -a
+  304  git init
+  305  git config --global init.defaultBranch main
+  306  git branch main
+  307  main
+  308  git main
+  309  git status
+  310  touch README.md
+  311  ls -a
+  312  git status
+  313  git log
+  314  git add 
+  315  git add README.md 
+  316  git status
+  317  git commit -m "initial commit"
+  318  git log
+  319  nano README.md 
+  320  cat README.md 
+  321  git status
+  322  git add README.md 
+  323  git status
+  324  git commit -m "second commit"
+  325  git log
+  326  nano README.md 
+  327  git status
+  328  git add README.md 
+  329  git status
+  330  git commit -m "third commit"
+  331  git log
+  332  git branch milkshake-flavours
+  333  git branch
+  334  git milkshake-flavours
+  335  git checkout milkshake-flavours 
+  336  nano milkshakes.md
+  337  git status
+  338  git log
+  339  git add milkshakes.md 
+  340  git commit -m "added initial flavours"
+  341  git log
+  342  git checkout master
+  343  git log
+  344  git branch history
+  345  git checkout history
+  346  git log
+  347  git branch
+  348  git checkout history 
+  349  history > history.txt
