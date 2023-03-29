@@ -1,5 +1,2 @@
- <<<<<<< HEAD
-booya
-=======
-booya
->>>>>>> history
+Some random text
+
